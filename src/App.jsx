@@ -51,6 +51,8 @@ function App() {
 				condition={CONDITIONS.DETERMINATE}
 				duration={DURATION_SEC}
 				onComplete={onComplete}
+				// size={40}
+				// thickness={4}
 			/>
 		),
 		LOADING_DONE: (
