@@ -6,7 +6,12 @@ import TimedProgress from "./TimedProgress";
 // condition 2 = indeterminate (spinner)
 // condition 3 = control (nothing)
 
-export default function ProgressCondition({ duration, condition, onComplete }) {
+export default function ProgressCondition({
+	duration,
+	condition,
+	onComplete,
+	...rest
+}) {
 	useEffect(() => {
 		const timer = setTimeout(() => {
 			onComplete?.();
@@ -15,12 +20,12 @@ export default function ProgressCondition({ duration, condition, onComplete }) {
 	}, [duration, onComplete]);
 
 	if (condition === 1) {
-		return <TimedProgress duration={duration} />;
+		return <TimedProgress duration={duration} {...rest} />;
 	}
 
 	if (condition === 2) {
-		return <CircularProgress variant="indeterminate" />;
+		return <CircularProgress variant="indeterminate" {...rest} />;
 	}
 
-	return null;
+	return <span>(control)</span>;
 }
