@@ -27,5 +27,5 @@ export default function ProgressCondition({
 		return <CircularProgress variant="indeterminate" {...rest} />;
 	}
 
-	return <span>(control)</span>;
+	return null;
 }
