@@ -7,7 +7,7 @@ import Paper from "@mui/material/Paper";
 import { useCallback, useState } from "react";
 import ProgressCondition from "./components/ProgressCondition";
 
-const DURATION_SEC = 2;
+const DURATION_SEC = 6;
 
 // random number 1-3
 const getRandomCondition = () => {
