@@ -45,8 +45,7 @@ function LoadingCompleteView({ onContinue }) {
 	return (
 		<div>
 			<p>Loading is complete.</p>
-			<p>No need to watch the loaded video. Please continue</p>
-
+			<p>Due to time constraints, the video will not be shown.</p>
 			<div
 				style={{
 					textAlign: "center",
@@ -71,10 +70,12 @@ function SurveyView({ condition }) {
 	return (
 		<div>
 			<p>
-				The demo is complete. Please help us collect data by completing the{" "}
-				<Link href={surveyLinks[condition]}>short survey</Link>.
+				The demo is complete. Please help us collect data by completing a short
+				survey.
 			</p>
-			<p>Thank you again.</p>
+			<p>
+				<Link href={surveyLinks[condition]}>Go to Google Forms Survey</Link>
+			</p>
 		</div>
 	);
 }
