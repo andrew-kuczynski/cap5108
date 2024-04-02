@@ -62,9 +62,9 @@ function LoadingCompleteView({ onContinue }) {
 
 function SurveyView({ condition }) {
 	const surveyLinks = {
-		1: "https://google.com",
-		2: "https://google.com",
-		3: "https://google.com",
+		1: "https://docs.google.com/forms/d/e/1FAIpQLSemLF3p1tRHHD4jFmUDNnnAF-U3YqOzUX-hAwY4ZENzQ2m90A/viewform?usp=sharing",
+		2: "https://docs.google.com/forms/d/e/1FAIpQLSeOzQ-XcD78Vo_7TTPZR2iG8EI_blYHtuaFS32gGmFp0s9_BQ/viewform?usp=sharing",
+		3: "https://docs.google.com/forms/d/e/1FAIpQLSflf2IWtv6lh1X9_h_k9w-nosuqzStGtF5M4fRUFCpiS8Bovw/viewform?usp=sharing",
 	};
 
 	return (
