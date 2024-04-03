@@ -18,14 +18,17 @@ function StartView({ onStart }) {
 	return (
 		<div>
 			<p>
-				We are conducting user experience research on a new technology for
-				loading video content on the web.
+				We are conducting research on a new technology for loading video content
+				on the web.
 			</p>
 			<p>
 				This demo and survey should take less a minute, please give it your
 				undivided attention for the duration.
 			</p>
-			<p>Thank you!</p>
+			<p>
+				On clicking <strong>Start</strong> a video will be begin loading. Note:
+				the video is loading even if it looks like nothing is happening.
+			</p>
 
 			<div
 				style={{
@@ -44,8 +47,12 @@ function StartView({ onStart }) {
 function LoadingCompleteView({ onContinue }) {
 	return (
 		<div>
-			<p>Loading is complete.</p>
-			<p>Due to time constraints, the video will not be shown.</p>
+			<p>
+				<span style={{ margin: "0 8px" }}>✅</span>Loading is complete.
+			</p>
+			<p>
+				In interest of your time, the video will not be shown. Please continue
+			</p>
 			<div
 				style={{
 					textAlign: "center",
@@ -70,9 +77,10 @@ function SurveyView({ condition }) {
 	return (
 		<div>
 			<p>
-				The demo is complete. Please help us collect data by completing a short
+				Our demo is complete. Please help us collect data by completing a short
 				survey.
 			</p>
+			<p>Thank you!</p>
 			<p>
 				<Link href={surveyLinks[condition]}>Go to Google Forms Survey</Link>
 			</p>
