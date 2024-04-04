@@ -155,7 +155,7 @@ function App() {
 						margin: "8px 0",
 						padding: 16,
 						maxHeight: "100%",
-						height: 500,
+						minHeight: 500,
 						fontSize: 22,
 					}}
 				>
