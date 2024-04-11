@@ -22,7 +22,7 @@ function StartView({ onStart }) {
 				on the web.
 			</p>
 			<p>
-				This demo and survey should take less a minute, please give it your
+				This demo and survey should take less than a minute, please give it your
 				undivided attention for the duration.
 			</p>
 			<p>
